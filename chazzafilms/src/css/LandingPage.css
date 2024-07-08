@@ -1,0 +1,53 @@
+/** css for the full screen video on the landing page **/
+.bg-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%)
+}
+
+.Name {
+    position: absolute;
+    margin-left: 1rem;
+    z-index: 4000;
+    color: white;
+}
+.Prompt {
+    position: absolute;
+    object-fit: cover;
+    font-weight: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4000;
+    color: rgba(104, 97, 97, 0.75);
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 2rem;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    animation: flash 6s infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50%  {opacity: 0;}
+    100% { opacity: 1; }
+}
